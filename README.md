@@ -1,38 +1,55 @@
-﻿# Treezures Labs (TRZ)
+﻿# Treezures Labs — A Development Lab & Token Launchpad with Staking and On-Chain Governance
 
-![Next.js](https://img.shields.io/badge/Next.js-000?logo=next.js&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
-![EVM](https://img.shields.io/badge/EVM-3C3C3D?logo=ethereum&logoColor=white)
-![Status](https://img.shields.io/badge/status-concept-orange)
+A development-lab and launchpad platform with a native token (TRZ), multi-tier staking, optional embedded DeFi cover, and a governance model based on proof-of-humanity.
 
-> **A development-labs and launchpad platform** with a native token (TRZ), multi-tier staking, optional embedded DeFi cover, and zk-proof-of-humanity DAO governance.
+> **Status:** Concept / whitepaper-stage site. Public site and staking interface are modeled; on-chain contracts and governance are in design.
 
-## Features
+## Overview
 
-| Module | Description |
-|---|---|
-| **Launchpad** | Incubates and launches protocols developed under the labs umbrella (e.g. ORYA, DUST). |
-| **Tiered staking** | Three TRZ staking models — flexible (unlocked), 30-day, and 180-day — with rising APR by lockup. |
-| **Embedded cover** | Optional DeFi insurance over staked positions via Nexus Mutual / OpenCover, purchased inline in the staking flow (Beefy-style unified UX). |
-| **Treasury governance** | Treasury directed by a multisig today, progressively decentralizing to a DAO. |
-| **zk-humanity voting** | "Decentralized Autonomous Humanity" — voting power gated by proof-of-humanity (Human Network passport, zkPass, Galxe) with Snapshot-style quorum. |
+Treezures Labs is the umbrella that incubates and launches protocols, with TRZ as its native token. Holders stake TRZ across flexible and locked tiers, can optionally insure their staked positions through integrated DeFi cover, and participate in a treasury that moves from multisig control toward a DAO.
 
-## Engineering highlights
+The governance model ("Decentralized Autonomous Humanity") gates voting power behind proof-of-humanity rather than raw token weight, using zk identity proofs and a Snapshot-style quorum.
 
-- **Tiered staking interface** — lockup tiers with differentiated rewards and clean position management.
-- **Insurance-as-a-feature** — third-party DeFi cover integrated directly into the stake flow rather than bolted on.
-- **Proof-of-humanity governance** — zk identity proofs as the basis for one-human-one-vote DAO participation.
-- **Multisig → DAO path** — treasury control designed to migrate from a 3-of-5 multisig to on-chain governance.
+## Core Features
 
-## Tech stack
+- **Launchpad** — incubates and launches protocols built under the lab.
+- **Tiered staking** — flexible (unlocked), 30-day, and 180-day TRZ staking with rising rewards by lockup.
+- **Embedded cover** — optional DeFi insurance over staked positions (Nexus Mutual / OpenCover), purchased inline in the staking flow.
+- **Treasury governance** — multisig today, progressively decentralizing to a DAO.
+- **Proof-of-humanity voting** — zk identity (Human Network, zkPass, Galxe) as the basis for one-human-one-vote.
 
-| Layer | Stack |
-|---|---|
+## Architecture
+
+| Layer | Technology |
+|-------|------------|
 | Frontend | Next.js, React, TypeScript, Tailwind CSS |
-| Chain | EVM (staking, treasury) |
-| Governance | Snapshot-style quorum; zk identity (Human Network / zkPass / Galxe) |
+| Chain | EVM — staking and treasury |
+| Governance | Snapshot-style quorum; zk identity proofs |
 | Insurance | Nexus Mutual / OpenCover |
 
-## Status
+## Screenshots
 
-Concept / whitepaper-stage site.
+<p align="center">
+  <img src="screenshots/01.png" width="800" /><br/><br/>
+  <img src="screenshots/02.png" width="800" /><br/><br/>
+  <img src="screenshots/03.png" width="800" /><br/><br/>
+  <img src="screenshots/04.png" width="800" /><br/><br/>
+</p>
+
+## Getting Started
+
+```bash
+npm install --legacy-peer-deps --ignore-scripts
+npx next dev
+```
+
+## Roadmap
+
+- Staking and treasury contracts
+- DAO migration with proof-of-humanity voting
+- Embedded-cover integration
+
+## Notes
+
+Shared as a portfolio artifact demonstrating product and system design. Concept-stage; not financial advice and not an offer of any token.
+

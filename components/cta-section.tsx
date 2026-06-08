@@ -12,12 +12,12 @@ export function CTASection() {
             Join us building Web3 projects that have access to non-dilutive capital through Treezures Labs.
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <Button size="lg" className="gap-2 opacity-50 cursor-not-allowed" disabled>
-              Apply for funding (Coming soon)
+            <Button size="lg" className="gap-2" >
+              Apply for funding
               <ArrowRight className="h-4 w-4" />
             </Button>
-            <Button variant="outline" size="lg" className="opacity-50 cursor-not-allowed bg-transparent" disabled>
-              Contact us (Coming soon)
+            <Button variant="outline" size="lg" className=" bg-transparent" >
+              Contact us
             </Button>
           </div>
         </div>

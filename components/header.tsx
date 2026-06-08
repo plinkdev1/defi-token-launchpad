@@ -36,9 +36,8 @@ export function Header() {
           {navItems.map((item) => (
             <button
               key={item.name}
-              disabled
+              
               className="px-3 py-2 text-sm font-medium text-muted-foreground/50 cursor-not-allowed opacity-50"
-              title="Coming soon"
             >
               {item.name}
             </button>
@@ -49,13 +48,12 @@ export function Header() {
         <div className="flex items-center gap-2">
           <ThemeToggle />
           <button
-            disabled
+            
             className="hidden text-sm font-medium text-muted-foreground/50 cursor-not-allowed opacity-50 sm:block"
-            title="Coming soon"
           >
             Contact us
           </button>
-          <Button variant="outline" size="sm" className="hidden sm:inline-flex bg-transparent opacity-50 cursor-not-allowed" disabled title="Coming soon">
+          <Button variant="outline" size="sm" className="hidden sm:inline-flex bg-transparent">
             Login
           </Button>
           <Button variant="ghost" size="icon" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
@@ -74,18 +72,17 @@ export function Header() {
           {navItems.map((item) => (
             <button
               key={item.name}
-              disabled
+              
               className="block rounded-lg px-3 py-2 text-base font-medium text-muted-foreground/50 cursor-not-allowed opacity-50 w-full text-left"
-              title="Coming soon"
             >
               {item.name}
             </button>
           ))}
           <div className="flex items-center gap-2 pt-4 border-t border-border/40">
-            <Button variant="outline" className="w-full bg-transparent opacity-50 cursor-not-allowed" disabled title="Coming soon">
+            <Button variant="outline" className="w-full bg-transparent">
               Contact us
             </Button>
-            <Button className="w-full opacity-50 cursor-not-allowed" disabled title="Coming soon">Login</Button>
+            <Button className="w-full">Login</Button>
           </div>
         </div>
       </div>

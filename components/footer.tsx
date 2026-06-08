@@ -51,9 +51,8 @@ export function Footer() {
                         </Link>
                       ) : (
                         <button
-                          disabled
+                          
                           className="text-sm text-muted-foreground/50 cursor-not-allowed opacity-50"
-                          title="Coming soon"
                         >
                           {link.name}
                         </button>

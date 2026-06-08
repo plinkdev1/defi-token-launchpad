@@ -48,12 +48,12 @@ export function HeroSection() {
 
           {/* CTAs */}
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <Button size="lg" className="gap-2 opacity-50 cursor-not-allowed" disabled>
-              Get started (Coming soon)
+            <Button size="lg" className="gap-2" >
+              Get started
               <ArrowRight className="h-4 w-4" />
             </Button>
-            <Button variant="outline" size="lg" className="opacity-50 cursor-not-allowed bg-transparent" disabled>
-              Learn more (Coming soon)
+            <Button variant="outline" size="lg" className=" bg-transparent" >
+              Learn more
             </Button>
           </div>
         </div>
