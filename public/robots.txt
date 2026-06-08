@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+Allow: /legal
+Allow: /privacy
+Allow: /terms
+
+# Disallow admin and sensitive routes
+Disallow: /admin
+Disallow: /api/
+Disallow: /.env
+Disallow: /.git
+
+# Crawl delay to reduce server load
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://treezureslabs.com/sitemap.xml
