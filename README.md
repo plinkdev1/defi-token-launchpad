@@ -1,6 +1,6 @@
-﻿<div align="center">
+<div align="center">
 
-# TreeZures Labs
+# DeFi Token Launchpad
 
 **A developer lab and token launchpad with staking, cover, and DAO governance**
 
