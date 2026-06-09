@@ -1,40 +1,137 @@
-﻿# Treezures Labs — A Development Lab & Token Launchpad with Staking and On-Chain Governance
+﻿<div align="center">
 
-A development-lab and launchpad platform with a native token (TRZ), multi-tier staking, optional embedded DeFi cover, and a governance model based on proof-of-humanity.
+# TreeZures Labs
 
-> **Status:** Concept / whitepaper-stage site. Public site and staking interface are modeled; on-chain contracts and governance are in design.
+**A developer lab and token launchpad with staking, cover, and DAO governance**
 
-## Overview
+[![Next.js](https://img.shields.io/badge/Next.js-000?logo=next.js&logoColor=white)](https://nextjs.org)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org)
+[![Tailwind](https://img.shields.io/badge/Tailwind_CSS-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
+[![Web3](https://img.shields.io/badge/Web3-F16822)]()
+[![Status](https://img.shields.io/badge/status-MVP-orange)]()
 
-Treezures Labs is the umbrella that incubates and launches protocols, with TRZ as its native token. Holders stake TRZ across flexible and locked tiers, can optionally insure their staked positions through integrated DeFi cover, and participate in a treasury that moves from multisig control toward a DAO.
+*Stake TRZ for tiered access, launch tokens with built-in cover, and govern through a multisig that hands off to a DAO.*
 
-The governance model ("Decentralized Autonomous Humanity") gates voting power behind proof-of-humanity rather than raw token weight, using zk identity proofs and a Snapshot-style quorum.
+</div>
 
-## Core Features
+---
 
-- **Launchpad** — incubates and launches protocols built under the lab.
-- **Tiered staking** — flexible (unlocked), 30-day, and 180-day TRZ staking with rising rewards by lockup.
-- **Embedded cover** — optional DeFi insurance over staked positions (Nexus Mutual / OpenCover), purchased inline in the staking flow.
-- **Treasury governance** — multisig today, progressively decentralizing to a DAO.
-- **Proof-of-humanity voting** — zk identity (Human Network, zkPass, Galxe) as the basis for one-human-one-vote.
+## What Is This?
 
-## Architecture
+TreeZures Labs is a developer lab and token launchpad. Holders stake the TRZ token for tiered access, projects launch with optional embedded DeFi cover, and the treasury runs multisig-first with a path to DAO governance secured by zk proof-of-humanity voting.
+
+> **Stake. Launch. Cover. Govern.**
+
+---
+
+## Features
+
+| Feature | Description | Status |
+|---|---|:---:|
+| Dev lab / dashboard | Project workspace and analytics | ✅ |
+| Tiered TRZ staking | Builder / Pro / DAO access tiers | 🚧 |
+| Token launchpad | Token launches with built-in safeguards | 🚧 |
+| Multisig treasury | Multisig-controlled, transitioning to DAO | 🚧 |
+| Embedded DeFi cover | Nexus Mutual / OpenCover integration | Roadmap |
+| zk proof-of-humanity | Sybil-resistant governance voting | Roadmap |
+
+---
+
+## How It Works
+
+```
+TRZ stakers ──▶ tiered access (Builder · Pro · DAO)
+     │
+     ▼
+Launchpad ──▶ token launches + embedded DeFi cover (Nexus Mutual / OpenCover)
+     │
+     ▼
+Multisig ──▶ DAO governance (zk proof-of-humanity voting)
+```
+
+---
+
+## Tech Stack
 
 | Layer | Technology |
 |-------|------------|
-| Frontend | Next.js, React, TypeScript, Tailwind CSS |
-| Chain | EVM — staking and treasury |
-| Governance | Snapshot-style quorum; zk identity proofs |
-| Insurance | Nexus Mutual / OpenCover |
+| Frontend | Next.js, React, TypeScript |
+| Styling | Tailwind CSS, shadcn/ui |
+| Auth / Data | Supabase |
+| Web3 | Wallet connect; Nexus Mutual / OpenCover (roadmap) |
+
+---
+
+## Project Structure
+
+```
+treezures-labs/
+app/
+   admin/
+   api/
+   auth/
+   company/
+   contact/
+   dashboard/
+components/
+   admin/
+   dashboard/
+   governance/
+   launchpad/
+   privacy/
+   projects/
+docs/
+   API_TOKEN_DESCRIPTORS.md
+   COMPLIANCE_AUDIT_REPORT.md
+   COMPLIANCE_EXECUTION_SUMMARY.md
+   COMPLIANCE_IMPLEMENTATION_CHECKLIST.md
+   COOKIE_CONSENT_SETUP.md
+   DEPLOYMENT_SECURITY_CHECKLIST.md
+hooks/
+   use-mobile.ts
+   use-toast.ts
+lib/
+   alchemy/
+   supabase/
+   cookie-consent.ts
+   utils.ts
+public/
+   logos/
+   apple-icon.png
+   icon-dark-32x32.png
+   icon-light-32x32.png
+   icon.svg
+   placeholder-logo.png
+scripts/
+   create-cookie-consent-table.sql
+   validate-compliance.js
+styles/
+   globals.css
+.env.local
+.gitignore
+components.json
+middleware.ts
+next.config.mjs
+next-env.d.ts
+package.json
+package-lock.json
+postcss.config.mjs
+README.md
+tsconfig.json
+```
+
+---
 
 ## Screenshots
 
 <p align="center">
-  <img src="screenshots/01.png" width="800" /><br/><br/>
-  <img src="screenshots/02.png" width="800" /><br/><br/>
-  <img src="screenshots/03.png" width="800" /><br/><br/>
-  <img src="screenshots/04.png" width="800" /><br/><br/>
+  <img src="screenshots/01.png" width="800" />
+  <img src="screenshots/02.png" width="800" />
+  <img src="screenshots/03.png" width="800" />
+  <img src="screenshots/04.png" width="800" />
 </p>
+
+---
 
 ## Getting Started
 
@@ -43,13 +140,30 @@ npm install --legacy-peer-deps --ignore-scripts
 npx next dev
 ```
 
+Environment variables (names only - never commit real values):
+
+```
+NEXT_PUBLIC_SUPABASE_URL=
+NEXT_PUBLIC_SUPABASE_ANON_KEY=
+```
+
+---
+
 ## Roadmap
 
-- Staking and treasury contracts
-- DAO migration with proof-of-humanity voting
-- Embedded-cover integration
+- Live TRZ staking tiers
+- Launchpad with embedded cover
+- Multisig to DAO transition
+- zk proof-of-humanity governance
+
+---
 
 ## Notes
 
-Shared as a portfolio artifact demonstrating product and system design. Concept-stage; not financial advice and not an offer of any token.
+Shared as a portfolio artifact demonstrating product and system design. Early prototype, not a finished product.
 
+<div align="center">
+
+Built for builders · MIT
+
+</div>
